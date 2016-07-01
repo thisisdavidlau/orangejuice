@@ -46,7 +46,7 @@ nav ul {
 
 nav ul li {
 	display: inline;
-	padding-left: 30px;
+	padding: 0 15px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 700;
 
@@ -58,17 +58,16 @@ nav ul li a {
 	letter-spacing: 1px;
 }
 
-section {
-	height: 350px;
-}
 
 .search {
-	float: right;
+	text-align: right;
 	display: block;
 	position: relative;
 	height: 50px;
-	right: 2%;
-	top: 2px;
+	width: 100%;
+	margin-top: 5px;
+	/*right: 2%;
+	top: 2px;*/
 	
 }
 
@@ -122,9 +121,13 @@ section {
 	top: 2px;
 }
 
+section {
+	height: 350px;
+}
+
 section img {
 	/*position: relative;*/
-	margin-top: 80px;
+	margin-top: 30px;
 	margin-left: 4%;
 	float: left;
 	/*display: inline;*/
@@ -185,6 +188,40 @@ footer {
 }
 
 
+@media(max-width: 651px){
+	section {
+		text-align: center;
+		height: 500px;
+	}
+
+	section img, 
+	section p {
+		float: none;
+		margin: 10px 0;
+	}
+}
+
+
+
+
+@media(max-width: 550px) {
+	nav {
+		text-align: center;
+		height: 90px;
+	}
+	
+	nav img {
+		padding-left: 0;
+	}
+
+	nav ul {
+		display: block;
+		width: 100%;
+		margin: 0;
+		right: 0;
+	}
+
+}
 
 
 
